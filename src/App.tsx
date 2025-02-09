@@ -424,16 +424,18 @@ const projects = [
     description:
       "Full-stack e-commerce platform with real-time inventory management for media products",
     image:
-      "../src/Assets/cronmedia.png",
+      "https://github.com/ChetanTiwari195/portfolio/blob/main/src/Assets/cronmedia.png?raw=true",
     tech: ["React", "PHP", "MySQL"],
+    link: "https://cron-media.com/",
   },
   {
     title: "Cypera",
     description:
       "Website Template with React.js and Python backend for a digital media company",
     image:
-      "../src/Assets/cypera.png",
+      "https://github.com/ChetanTiwari195/portfolio/blob/main/src/Assets/cypera.png?raw=true",
     tech: ["React.js", "Python", "MySQL"],
+    link: "https://cyperadigital.com/",
   },
 ];
 
@@ -540,35 +542,35 @@ function ResumeDownload() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-      <motion.div
-        className="flex justify-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
+    <motion.div
+      className="flex justify-center"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2 }}
+    >
+      <motion.a
+        href="https://raw.githubusercontent.com/ChetanTiwari195/portfolio/3ad9a021b98dc0e89f57810da6314b7089f1ce0f/src/Assets/resume.pdf"
+        download="resume.pdf"
+        className="group relative inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full overflow-hidden"
+        onHoverStart={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
-        <motion.a
-          href="../src/Assets/resume.pdf"
-          download="resume.pdf"
-          className="group relative inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full overflow-hidden"
-          onHoverStart={() => setIsHovered(true)}
-          onHoverEnd={() => setIsHovered(false)}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <AnimatePresence>
-            {isHovered && (
-              <motion.span
-                className="absolute inset-0 bg-blue-500"
-                initial={{ scale: 0, borderRadius: "100%" }}
-                animate={{ scale: 1, borderRadius: "0%" }}
-                exit={{ scale: 0, borderRadius: "100%" }}
-              />
-            )}
-          </AnimatePresence>
-          <Download className="w-5 h-5 relative z-10" />
-          <span className="relative z-10">Download Resume</span>
-        </motion.a>
-      </motion.div>
+        <AnimatePresence>
+          {isHovered && (
+            <motion.span
+              className="absolute inset-0 bg-blue-500"
+              initial={{ scale: 0, borderRadius: "100%" }}
+              animate={{ scale: 1, borderRadius: "0%" }}
+              exit={{ scale: 0, borderRadius: "100%" }}
+            />
+          )}
+        </AnimatePresence>
+        <Download className="w-5 h-5 relative z-10" />
+        <span className="relative z-10">Download Resume</span>
+      </motion.a>
+    </motion.div>
   );
 }
 
@@ -924,7 +926,7 @@ function App() {
             className="w-32 h-32 rounded-full overflow-hidden mb-8"
           >
             <img
-              src="../src/Assets/Chetan.png"
+              src="https://raw.githubusercontent.com/ChetanTiwari195/portfolio/refs/heads/main/src/Assets/Chetan.PNG"
               alt="Profile"
               className="w-full h-full object-cover"
             />
@@ -1042,7 +1044,8 @@ function App() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
+              href={project.link}
               key={project.title}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
@@ -1072,7 +1075,7 @@ function App() {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </Section>
