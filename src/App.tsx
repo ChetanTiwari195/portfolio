@@ -960,7 +960,7 @@ function App() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="tiwarichetan212@gmail.com"
+                href="mailto:tiwarichetan212@gmail.com"
                 className="hover:text-blue-400 transition-colors"
               >
                 <Mail className="w-6 h-6" />
