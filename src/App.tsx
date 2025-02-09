@@ -944,7 +944,7 @@ function App() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="#"
+                href="https://github.com/ChetanTiwari195"
                 className="hover:text-blue-400 transition-colors"
               >
                 <Github className="w-6 h-6" />
@@ -952,7 +952,7 @@ function App() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="#"
+                href="https://www.linkedin.com/in/chetan56tiwari/"
                 className="hover:text-blue-400 transition-colors"
               >
                 <Linkedin className="w-6 h-6" />
@@ -960,7 +960,7 @@ function App() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="#"
+                href="tiwarichetan212@gmail.com"
                 className="hover:text-blue-400 transition-colors"
               >
                 <Mail className="w-6 h-6" />
