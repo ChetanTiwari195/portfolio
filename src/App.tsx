@@ -424,7 +424,7 @@ const projects = [
     description:
       "Full-stack e-commerce platform with real-time inventory management for media products",
     image:
-      "https://github.com/ChetanTiwari195/portfolio/blob/main/src/Assets/cronmedia.png?raw=true",
+      "/Assets/cronmedia.png",
     tech: ["React", "PHP", "MySQL"],
     link: "https://cron-media.com/",
   },
@@ -433,7 +433,7 @@ const projects = [
     description:
       "Website Template with React.js and Python backend for a digital media company",
     image:
-      "https://github.com/ChetanTiwari195/portfolio/blob/main/src/Assets/cypera.png?raw=true",
+      "Assets/cypera.png",
     tech: ["React.js", "Python", "MySQL"],
     link: "https://cyperadigital.com/",
   },
