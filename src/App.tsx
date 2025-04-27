@@ -549,8 +549,8 @@ function ResumeDownload() {
       transition={{ delay: 0.2 }}
     >
       <motion.a
-        href="https://raw.githubusercontent.com/ChetanTiwari195/portfolio/4f00d4edcc726ebd1c14d73534340c77eb818a48/src/Assets/chetan_resume.pdf"
-        download="resume.pdf"
+        href="/Assets/chetan_resume.pdf"
+        download="chetan_resume.pdf"
         className="group relative inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full overflow-hidden"
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
@@ -926,7 +926,7 @@ function App() {
             className="w-32 h-32 rounded-full overflow-hidden mb-8"
           >
             <img
-              src="https://raw.githubusercontent.com/ChetanTiwari195/portfolio/refs/heads/main/src/Assets/Chetan.PNG"
+              src="/Assets/Chetan.PNG"
               alt="Profile"
               className="w-full h-full object-cover"
             />
